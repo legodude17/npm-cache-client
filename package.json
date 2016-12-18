@@ -1,0 +1,57 @@
+{
+  "name": "npm-cache-client",
+  "version": "0.0.1",
+  "description": "A client for a npm cache",
+  "homepage": "https://github.com/legodude17/npm-cache-client#readme",
+  "author": {
+    "name": "JDB",
+    "email": "",
+    "url": "https://legodude17.github.io"
+  },
+  "main": "index.js",
+  "bin": "cli.js",
+  "keywords": [
+    "npm",
+    "cache",
+    "client",
+    "libnpm"
+  ],
+  "dependencies": {
+    "defaults": "^1.0.3",
+    "fstream": "^1.0.10",
+    "fstream-npm": "^1.2.0",
+    "graceful-fs": "^4.1.11",
+    "inherits": "^2.0.3",
+    "mkdirp": "^0.5.1",
+    "os-homedir": "^1.0.2",
+    "read-package-json": "^2.0.4",
+    "realize-package-specifier": "^3.0.3",
+    "rimraf": "^2.5.4",
+    "safe-mkdir": "^1.0.4",
+    "sha": "^2.0.1",
+    "tar": "^2.2.1",
+    "unique-filename": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "*"
+  },
+  "eslintConfig": {
+    "env": {
+      "mocha": true,
+      "node": true
+    }
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "test": "node test.js",
+    "pretest": "rm -rf test/example-cache"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legodude17/npm-cache-client"
+  },
+  "bugs": {
+    "url": ""
+  }
+}
